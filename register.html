@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Register - Erns Consultant</title>
   <link rel="stylesheet" href="styles.css" />
-  
 </head>
+
 <body>
+
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="Erns Consultant Home">
-      <span class="logo-badge"><img src="logo.png" alt="Erns Consultant Logo" class="logo"></span>
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="Erns Consultant Logo" class="logo">
       <span>
         <span class="brand-title">Erns Consultant</span>
         <span class="brand-subtitle">Sterile Processing Training</span>
       </span>
     </a>
 
-    <nav class="navbar" aria-label="Main navigation">
+    <nav class="navbar">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="courses.html">Courses</a>
@@ -29,11 +30,24 @@
     </nav>
   </div>
 </header>
+
 <main>
-<section class="page-hero"><div class="container"><h1>Student Registration</h1><p>Please complete your registration and review the $250 first payment instructions.</p></div></section>
-<section class="section"><div class="container"><div class="form-card">
-<p class="alert-note">Please complete your first $250 payment before or immediately after submitting this form. Your seat is secured after payment is received.</p>
-<form action="https://formsubmit.co/ernsconsultantllc@gmail.com" method="POST">
+<section class="section">
+<div class="container">
+<div class="form-card">
+
+<h1>Student Registration Form</h1>
+
+<p>
+  Please complete the form below to register for the Sterile Processing / Central Service Technician course.
+</p>
+
+<p style="color:#b91c1c; font-weight:bold;">
+  Please make your first $250 payment at registration.
+</p>
+
+<form action="https://formsubmit.co/arichardkwaku@gmail.com" method="POST">
+
   <input type="hidden" name="_next" value="https://ernsconsultantllc.github.io/Wepp_site/thankyou.html">
   <input type="hidden" name="_subject" value="New Student Registration - Erns Consultant">
   <input type="hidden" name="_template" value="table">
@@ -43,16 +57,22 @@
 
   <label>Full Name</label>
   <input type="text" name="Full Name" required>
+
   <label>Email Address</label>
   <input type="email" name="email" required>
+
   <label>Phone Number</label>
   <input type="tel" name="Phone Number" required>
+
   <label>Address</label>
   <input type="text" name="Address" required>
+
   <label>City</label>
   <input type="text" name="City" required>
+
   <label>State</label>
   <input type="text" name="State" required>
+
   <label>ZIP Code</label>
   <input type="text" name="ZIP Code" required>
 
@@ -71,49 +91,70 @@
     <option>Yes</option>
     <option>No</option>
   </select>
+
   <label>Message / Questions</label>
   <textarea name="Message" rows="5"></textarea>
+
   <button type="submit" class="submit-btn">Submit Registration</button>
+
 </form>
 
 <div id="payment" class="payment-box">
   <h2>Tuition & Payment Plan</h2>
-  <div class="price-card"><h2>$1,000 Total Tuition</h2><p>Pay in 4 installments of $250. First $250 payment is due at registration.</p></div>
-  <h3>Step 1: Make Your First Payment ($250)</h3>
+
+  <div class="price-card">
+    <h2>$1,000 Total Tuition</h2>
+    <p>Pay in 4 installments of $250.</p>
+  </div>
+
+  <h3>Payment Breakdown</h3>
+  <ul class="nice-list">
+    <li><strong>$250</strong> due at registration</li>
+    <li><strong>$250</strong> second installment</li>
+    <li><strong>$250</strong> third installment</li>
+    <li><strong>$250</strong> final installment</li>
+  </ul>
+
+  <p>Please make your first payment using one of the options below:</p>
+
   <div class="payment-options">
-    <a class="pay-btn paypal" href="https://www.paypal.com/paypalme/eaernest" target="_blank">Pay with PayPal</a>
-    <p><strong>PayPal Email:</strong> eaernest@gmail.com</p>
+
+    <a class="pay-btn paypal" href="https://www.paypal.com/paypalme/eaernest" target="_blank">
+      Pay with PayPal
+    </a>
+
     <p><strong>Zelle:</strong> ernsconsultantllc@gmail.com</p>
+
     <p><strong>Cash App:</strong> ernsconsultantllc@gmail.com</p>
-    <div class="qr-wrap"><p><strong>Scan Cash App QR Code</strong></p><img src="cashapp-qr.jpg" alt="Cash App QR Code" class="qr-code"></div>
+
+    <img src="cashapp-qr.jpg" alt="Cash App QR Code" class="qr-code">
+
   </div>
-  <h3>Step 2: Submit Registration Form</h3>
-  <p class="payment-note">Please include your <strong>full name</strong> in the payment note so we can match your registration.</p>
-  <p class="payment-note"><strong>Important:</strong> Your seat is only secured after your first $250 payment is received. Remaining payments will be scheduled after enrollment.</p>
+
+  <p class="payment-note">
+    Please include your <strong>full name</strong> in the payment note so we can match your registration.
+  </p>
+
+  <p class="payment-note">
+    <strong>Important:</strong> Your seat is secured after the first $250 payment is received.
+  </p>
 </div>
-</div></div></section></main>
+
+</div>
+</div>
+</section>
+</main>
+
 <footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <h3>Erns Consultant</h3>
-      <p>Sterile Processing / Central Service Technician training and certification preparation support.</p>
-    </div>
-    <div>
-      <h3>Contact</h3>
-      <p>Call or Text: <a href="tel:+12403539032">(240) 353-9032</a></p>
-      <p>Email: <a href="mailto:ernsconsultantllc@gmail.com">ernsconsultantllc@gmail.com</a></p>
-    </div>
-    <div>
-      <h3>Quick Links</h3>
-      <p><a href="register.html">Register</a> · <a href="tuition.html">Tuition</a> · <a href="contact.html">Contact</a></p>
-    </div>
-  </div>
-  <div class="footer-bottom">&copy; 2026 Erns Consultant. All Rights Reserved.</div>
+  <p>Call Ernest: <a href="tel:+12403539032">(240) 353-9032</a></p>
+  <p>&copy; 2026 Erns Consultant. All Rights Reserved.</p>
 </footer>
-<div class="contact-float" aria-label="Quick contact buttons">
-  <a href="tel:+12403539032" class="contact-btn call" aria-label="Call Ernest">📞</a>
-  <a href="sms:+12403539032" class="contact-btn sms" aria-label="Text Ernest">💬</a>
-  <a href="https://wa.me/12403539032" target="_blank" class="contact-btn whatsapp" aria-label="WhatsApp Ernest">🟢</a>
+
+<div class="contact-float">
+  <a href="tel:+12403539032" class="contact-btn call">📞</a>
+  <a href="sms:+12403539032" class="contact-btn sms">💬</a>
+  <a href="https://wa.me/12403539032" target="_blank" class="contact-btn whatsapp">🟢</a>
 </div>
+
 </body>
 </html>
