@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>About — Erns Consultant</title>
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Erns Consultant</title>
+  <link rel="stylesheet" href="styles.css" />
+  
 </head>
 <body>
-
 <header class="site-header">
-  <div class="brand">
-    <img src="logo.png" alt="Erns Consultant Logo" class="logo" />
-    <h1>Erns Consultant</h1>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Erns Consultant Home">
+      <span class="logo-badge"><img src="logo.png" alt="Erns Consultant Logo" class="logo"></span>
+      <span>
+        <span class="brand-title">Erns Consultant</span>
+        <span class="brand-subtitle">Sterile Processing Training</span>
+      </span>
+    </a>
+
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="tuition.html">Tuition</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:+12403539032" class="call-btn">Call Ernest</a>
+    </nav>
   </div>
-  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
-  <label for="nav-toggle" class="menu-icon">&#9776;</label>
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="courses.html">Courses</a>
-    <a href="tuition.html">Tuition</a>
-    <a href="register.html">Register</a>
-    <a href="contact.html">Contact</a>
-  </nav>
 </header>
-
-<main>
-
-<section>
-  <h2>About Us</h2>
-  <p><strong>Erns Consultant</strong></p>
-  <p>7444 Bronsind Trail<br/>Fort Worth, Texas</p>
-  <p>We specialize in training for Sterile Processing and Central Service operations. Our instructors bring real-world experience from Operating Rooms, Ambulatory Surgery, and Central Service departments.</p>
-</section>
-
-</main>
-<footer>
-  <p>7444 Bronsind Trail, Fort Worth, Texas</p>
-  <p>📞 (240) 353-9032 | 📧 <a href="mailto:ernsconsultantllc@gmail.com">ernsconsultantllc@gmail.com</a></p>
-  <p>&copy; 2025 Erns Consultant. All Rights Reserved.</p>
+<main><section class="page-hero"><div class="container"><h1>About Erns Consultant</h1><p>Helping students prepare for healthcare opportunities in sterile processing and central service.</p></div></section>
+<section class="section"><div class="container page-card">
+<p>Erns Consultant provides healthcare training for students interested in sterile processing and central service technician careers.</p>
+<p>Our goal is to help students understand important healthcare safety practices including infection control, sterilization, medical instruments, packaging, storage, and handling.</p>
+<p><strong>Questions?</strong> Call Ernest at <a href="tel:+12403539032">(240) 353-9032</a>.</p>
+</div></section></main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Erns Consultant</h3>
+      <p>Sterile Processing / Central Service Technician training and certification preparation support.</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>Call or Text: <a href="tel:+12403539032">(240) 353-9032</a></p>
+      <p>Email: <a href="mailto:ernsconsultantllc@gmail.com">ernsconsultantllc@gmail.com</a></p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="register.html">Register</a> · <a href="tuition.html">Tuition</a> · <a href="contact.html">Contact</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 Erns Consultant. All Rights Reserved.</div>
 </footer>
+<div class="contact-float" aria-label="Quick contact buttons">
+  <a href="tel:+12403539032" class="contact-btn call" aria-label="Call Ernest">📞</a>
+  <a href="sms:+12403539032" class="contact-btn sms" aria-label="Text Ernest">💬</a>
+  <a href="https://wa.me/12403539032" target="_blank" class="contact-btn whatsapp" aria-label="WhatsApp Ernest">🟢</a>
+</div>
 </body>
 </html>
