@@ -1,122 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Register — Erns Consultant</title>
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - Erns Consultant</title>
+  <link rel="stylesheet" href="styles.css" />
+  
 </head>
 <body>
-
 <header class="site-header">
-  <div class="brand">
-    <img src="logo.png" alt="Erns Consultant Logo" class="logo" />
-    <h1>Erns Consultant</h1>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Erns Consultant Home">
+      <span class="logo-badge"><img src="logo.png" alt="Erns Consultant Logo" class="logo"></span>
+      <span>
+        <span class="brand-title">Erns Consultant</span>
+        <span class="brand-subtitle">Sterile Processing Training</span>
+      </span>
+    </a>
+
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="tuition.html">Tuition</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:+12403539032" class="call-btn">Call Ernest</a>
+    </nav>
   </div>
-  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
-  <label for="nav-toggle" class="menu-icon">&#9776;</label>
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="courses.html">Courses</a>
-    <a href="tuition.html">Tuition</a>
-    <a href="register.html">Register</a>
-    <a href="contact.html">Contact</a>
-  </nav>
 </header>
-
 <main>
+<section class="page-hero"><div class="container"><h1>Student Registration</h1><p>Please complete your registration and review the $250 first payment instructions.</p></div></section>
+<section class="section"><div class="container"><div class="form-card">
+<p class="alert-note">Please complete your first $250 payment before or immediately after submitting this form. Your seat is secured after payment is received.</p>
+<form action="https://formsubmit.co/ernsconsultantllc@gmail.com" method="POST">
+  <input type="hidden" name="_next" value="https://ernsconsultantllc.github.io/Wepp_site/thankyou.html">
+  <input type="hidden" name="_subject" value="New Student Registration - Erns Consultant">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="true">
+  <input type="hidden" name="_autoresponse" value="Thank you for registering with Erns Consultant. We have received your registration. Our team will contact you soon.">
+  <input type="text" name="_honey" style="display:none">
 
-<section>
-  <h2>Register for Classes</h2>
-  <p>Complete the form below to register. After submitting, you’ll be redirected to our Thank You page. Please pay <strong>$200 (non‑refundable)</strong> via PayPal to confirm your spot.</p>
+  <label>Full Name</label>
+  <input type="text" name="Full Name" required>
+  <label>Email Address</label>
+  <input type="email" name="email" required>
+  <label>Phone Number</label>
+  <input type="tel" name="Phone Number" required>
+  <label>Address</label>
+  <input type="text" name="Address" required>
+  <label>City</label>
+  <input type="text" name="City" required>
+  <label>State</label>
+  <input type="text" name="State" required>
+  <label>ZIP Code</label>
+  <input type="text" name="ZIP Code" required>
 
-  <!-- ✅ NO-JS form posting to your Google Apps Script Web App -->
-  <form action="https://script.google.com/macros/s/AKfycbzXFkozrvWg95ee5K8v_uPxMv91bikuD8lz2_FORhQ3pO8iW3XQFmHCtvaTxWN8I4z6/exec" method="POST" class="card">
-    <input type="hidden" name="redirect_url" value="https://ernsconsultantllc.github.io/Wepp_site/thankyou.html" />
-    <input type="text" name="company" class="honeypot" autocomplete="off" tabindex="-1" aria-hidden="true" />
+  <label>Select Course</label>
+  <select name="Selected Course" required>
+    <option value="">-- Please choose a class --</option>
+    <option value="First Class - January 3rd 2026">First Class : January 4rd 2027</option>
+    <option value="Second Class - April 4th 2026">Second Class : April 4th 2026</option>
+    <option value="Third Class - July 4th 2026">Third Class : July 4th 2026</option>
+    <option value="Fourth Class - October 3rd 2026">Fourth Class : October 3rd 2026</option>
+  </select>
 
-    <div class="grid">
-      <label>Full Name
-        <input type="text" name="fullName" required autocomplete="name" />
-      </label>
-      <label>Email
-        <input type="email" name="email" required autocomplete="email" />
-      </label>
-      <label>Phone
-        <input type="tel" name="phone" inputmode="tel" autocomplete="tel" />
-      </label>
-      <label>Select Course
-        <select name="course" required>
-          <option value="">-- Please choose a class --</option>
-          <option value="First Class - Jan 3rd">First Class : January 3rd 2026</option>
-          <option value="Second Class - April 4th">Second Class : April 4th 2026</option>
-          <option value="Third Class - July 4th">Third Class : July 4th 2026</option>
-          <option value="Fourth Class - October 3rd">Fourth Class : October 3rd 2026</option>
-        </select>
-      </label>
+  <label>Do you have healthcare experience?</label>
+  <select name="Healthcare Experience" required>
+    <option value="">Select One</option>
+    <option>Yes</option>
+    <option>No</option>
+  </select>
+  <label>Message / Questions</label>
+  <textarea name="Message" rows="5"></textarea>
+  <button type="submit" class="submit-btn">Submit Registration</button>
+</form>
+
+<div id="payment" class="payment-box">
+  <h2>Tuition & Payment Plan</h2>
+  <div class="price-card"><h2>$1,000 Total Tuition</h2><p>Pay in 4 installments of $250. First $250 payment is due at registration.</p></div>
+  <h3>Step 1: Make Your First Payment ($250)</h3>
+  <div class="payment-options">
+    <a class="pay-btn paypal" href="https://www.paypal.com/paypalme/eaernest" target="_blank">Pay with PayPal</a>
+    <p><strong>PayPal Email:</strong> eaernest@gmail.com</p>
+    <p><strong>Zelle:</strong> ernsconsultantllc@gmail.com</p>
+    <p><strong>Cash App:</strong> ernsconsultantllc@gmail.com</p>
+    <div class="qr-wrap"><p><strong>Scan Cash App QR Code</strong></p><img src="cashapp-qr.jpg" alt="Cash App QR Code" class="qr-code"></div>
+  </div>
+  <h3>Step 2: Submit Registration Form</h3>
+  <p class="payment-note">Please include your <strong>full name</strong> in the payment note so we can match your registration.</p>
+  <p class="payment-note"><strong>Important:</strong> Your seat is only secured after your first $250 payment is received. Remaining payments will be scheduled after enrollment.</p>
+</div>
+</div></div></section></main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Erns Consultant</h3>
+      <p>Sterile Processing / Central Service Technician training and certification preparation support.</p>
     </div>
-
-    <h3>Address</h3>
-    <div class="grid">
-      <label>Street Address
-        <input type="text" name="address_street" required autocomplete="address-line1" />
-      </label>
-      <label>Address Line 2 (optional)
-        <input type="text" name="address_line2" autocomplete="address-line2" />
-      </label>
-      <label>City
-        <input type="text" name="address_city" required autocomplete="address-level2" />
-      </label>
-      <label>State/Province
-        <input type="text" name="address_state" required autocomplete="address-level1" />
-      </label>
-      <label>ZIP/Postal Code
-        <input type="text" name="address_zip" required autocomplete="postal-code" />
-      </label>
-      <label>Country
-        <input type="text" name="address_country" required autocomplete="country-name" />
-      </label>
+    <div>
+      <h3>Contact</h3>
+      <p>Call or Text: <a href="tel:+12403539032">(240) 353-9032</a></p>
+      <p>Email: <a href="mailto:ernsconsultantllc@gmail.com">ernsconsultantllc@gmail.com</a></p>
     </div>
-
-    <label class="stack">Additional Notes (optional)
-      <textarea name="notes" rows="4" placeholder="Anything we should know?"></textarea>
-    </label>
-
-    <label class="terms">
-      <input type="checkbox" name="agree" required />
-      I confirm my information is accurate and I understand the registration fee is non-refundable.
-    </label>
-
-    <button type="submit" class="btn-primary">Submit Registration</button>
-    <p class="form-hint small">By submitting, you consent to be contacted at the email/phone provided about your registration.</p>
-  </form>
-
-  <hr class="spacer" />
-  <h3 id="payment">Pay Your Registration Fee</h3>
-  <p>After you submit the registration form above, please pay your <strong>$200 (non‑refundable)</strong> registration fee using PayPal.</p>
-
-  <!-- ✅ Optional: PayPal Standard payment button (no JS) -->
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="card">
-    <input type="hidden" name="cmd" value="_xclick">
-    <input type="hidden" name="business" value="eaernest@gmail.com">
-    <input type="hidden" name="item_name" value="SPT Registration Fee (Non-Refundable)">
-    <input type="hidden" name="amount" value="200.00">
-    <input type="hidden" name="currency_code" value="USD">
-    <input type="hidden" name="no_shipping" value="1">
-    <input type="hidden" name="no_note" value="1">
-    <input type="hidden" name="return" value="https://ernsconsultantllc.github.io/Wepp_site/thankyou.html">
-    <input type="hidden" name="cancel_return" value="https://ernsconsultantllc.github.io/Wepp_site/register.html#payment-cancel">
-    <button type="submit" class="btn-primary">Pay $200 with PayPal</button>
-    <p class="small">Note: Payments are non‑refundable. You will be redirected back to our site after checkout.</p>
-  </form>
-</section>
-
-</main>
-<footer>
-  <p>7444 Bronsind Trail, Fort Worth, Texas</p>
-  <p>📞 (240) 353-9032 | 📧 <a href="mailto:ernsconsultantllc@gmail.com">ernsconsultantllc@gmail.com</a></p>
-  <p>&copy; 2025 Erns Consultant. All Rights Reserved.</p>
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="register.html">Register</a> · <a href="tuition.html">Tuition</a> · <a href="contact.html">Contact</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 Erns Consultant. All Rights Reserved.</div>
 </footer>
+<div class="contact-float" aria-label="Quick contact buttons">
+  <a href="tel:+12403539032" class="contact-btn call" aria-label="Call Ernest">📞</a>
+  <a href="sms:+12403539032" class="contact-btn sms" aria-label="Text Ernest">💬</a>
+  <a href="https://wa.me/12403539032" target="_blank" class="contact-btn whatsapp" aria-label="WhatsApp Ernest">🟢</a>
+</div>
 </body>
 </html>
