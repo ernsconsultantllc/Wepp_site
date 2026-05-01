@@ -1,43 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Home — Erns Consultant</title>
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erns Consultant</title>
+  <link rel="stylesheet" href="styles.css" />
+  
 </head>
 <body>
-
 <header class="site-header">
-  <div class="brand">
-    <img src="logo.png" alt="Erns Consultant Logo" class="logo" />
-    <h1>Erns Consultant</h1>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Erns Consultant Home">
+      <span class="logo-badge"><img src="logo.png" alt="Erns Consultant Logo" class="logo"></span>
+      <span>
+        <span class="brand-title">Erns Consultant</span>
+        <span class="brand-subtitle">Sterile Processing Training</span>
+      </span>
+    </a>
+
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="tuition.html">Tuition</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:+12403539032" class="call-btn">Call Ernest</a>
+    </nav>
   </div>
-  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
-  <label for="nav-toggle" class="menu-icon">&#9776;</label>
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="courses.html">Courses</a>
-    <a href="tuition.html">Tuition</a>
-    <a href="register.html">Register</a>
-    <a href="contact.html">Contact</a>
-  </nav>
 </header>
-
 <main>
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-logo-wrap"><img src="logo.png" alt="Erns Consultant Logo" class="hero-logo"></div>
+      <p class="eyebrow">Healthcare Career Training</p>
+      <h1>Professional Sterile Processing Training</h1>
+      <p class="hero-text">Begin your healthcare career with practical lessons, course materials, and certification preparation support.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="register.html">Register Now</a>
+        <a class="btn btn-secondary" href="tel:+12403539032">Call Ernest: (240) 353-9032</a>
+      </div>
+    </div>
+  </section>
 
-<section>
-  <h2>Welcome to Erns Consultant</h2>
-  <p>We organize comprehensive Sterile Processing Technician courses to prepare students for careers in Central Service and Surgical Services. Our curriculum covers sterilization, processing, packaging, identification, inspection, handling, assembly, and safe usage of instrumentation.</p>
-  <p><a class="btn-primary" href="register.html">Register Now</a></p>
-</section>
+  <section class="section">
+    <div class="container grid-3">
+      <div class="card"><div class="icon">✓</div><h3>Career-Focused</h3><p>Training designed for students entering sterile processing and central service roles.</p></div>
+      <div class="card"><div class="icon">✓</div><h3>Practical Lessons</h3><p>Learn infection control, instrumentation, sterilization, packaging, and handling.</p></div>
+      <div class="card"><div class="icon">✓</div><h3>Student Support</h3><p>Course materials, custom review sheets, and guidance are included for students.</p></div>
+    </div>
+  </section>
 
+  <section class="section section-soft">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">2026 Class Schedule</p>
+        <h2>Choose the class date that works for you</h2>
+        <p>Students may select from quarterly class dates during registration.</p>
+      </div>
+      <div class="schedule-card">
+        <ul class="nice-list">
+          <li>First Class: January 3rd 2026</li>
+          <li>Second Class: April 4th 2026</li>
+          <li>Third Class: July 4th 2026</li>
+          <li>Fourth Class: October 3rd 2026</li>
+        </ul>
+        <a class="btn btn-primary" href="register.html">Select a Class</a>
+      </div>
+    </div>
+  </section>
 </main>
-<footer>
-  <p>7444 Bronsind Trail, Fort Worth, Texas</p>
-  <p>📞 (240) 353-9032 | 📧 <a href="mailto:ernsconsultantllc@gmail.com">ernsconsultantllc@gmail.com</a></p>
-  <p>&copy; 2025 Erns Consultant. All Rights Reserved.</p>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Erns Consultant</h3>
+      <p>Sterile Processing / Central Service Technician training and certification preparation support.</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>Call or Text: <a href="tel:+12403539032">(240) 353-9032</a></p>
+      <p>Email: <a href="mailto:ernsconsultantllc@gmail.com">ernsconsultantllc@gmail.com</a></p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="register.html">Register</a> · <a href="tuition.html">Tuition</a> · <a href="contact.html">Contact</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 Erns Consultant. All Rights Reserved.</div>
 </footer>
+<div class="contact-float" aria-label="Quick contact buttons">
+  <a href="tel:+12403539032" class="contact-btn call" aria-label="Call Ernest">📞</a>
+  <a href="sms:+12403539032" class="contact-btn sms" aria-label="Text Ernest">💬</a>
+  <a href="https://wa.me/12403539032" target="_blank" class="contact-btn whatsapp" aria-label="WhatsApp Ernest">🟢</a>
+</div>
 </body>
 </html>
